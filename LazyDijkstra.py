@@ -16,6 +16,8 @@ def lazy_dijkstra_sssp(adj_list, start_node):
     '''
     dist = [0 if i == start_node else None for i in range(n)]
     
+    visited = [False for i in range(n)]
+    
     priority_q = []
     
     heapq.heappush(priority_q, (0, start_node))
@@ -27,13 +29,18 @@ def lazy_dijkstra_sssp(adj_list, start_node):
         c = heapq.heappop(priority_q)
         current = c[1]
         
+        visited[current] = True
+        
         if c[0] > dist[current]:
             continue
         
         for i in adj_list[current]:
+            if visited[i[0]]:
+                continue
             d = dist[current] + i[1]
             dist[i[0]] = d if dist[i[0]] == None else min(d, dist[i[0]])
-            heapq.heappush(priority_q, (dist[i[0]], i[0]))
+            if dist[i[0]] == d:
+                heapq.heappush(priority_q, (dist[i[0]], i[0]))
             
     return dist
     
