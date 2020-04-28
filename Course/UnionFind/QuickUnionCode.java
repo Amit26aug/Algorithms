@@ -49,15 +49,15 @@ class QuickFindCode {
 		    int obj2 = Integer.parseInt(input[2]);
 
 		    if(op == 0) {
-			qu.union(obj1, obj2);
-			System.out.println("Union: " + obj1 + " and " + obj2);
+				qu.union(obj1, obj2);
+				System.out.println("Union: " + obj1 + " and " + obj2);
 		    }
 		    else if(op == 1) {
-			boolean connected = qu.find(obj1, obj2);
-			System.out.println("Connected: " + obj1 + " and " + obj2 + "-> " + connected);
+				boolean connected = qu.find(obj1, obj2);
+				System.out.println("Connected: " + obj1 + " and " + obj2 + "-> " + connected);
 		    } 
 		    else {
-			throw new IllegalArgumentException();
+				throw new IllegalArgumentException();
 		    }
 	    }
 		
