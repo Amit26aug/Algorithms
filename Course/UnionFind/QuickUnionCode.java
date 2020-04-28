@@ -18,7 +18,7 @@ class QuickFind {
     public void union(int obj1, int obj2) {
         int ob1Id = id[obj1];
         int ob2Id = id[obj2];
-        
+         
         for(int i = 0; i < id.length; ++i) {
             if(id[i] == ob1Id) id[i] = ob2Id;
         }
