@@ -25,7 +25,7 @@ public class BinaryExponentiation {
     }
 
     public static void main(String[] args) {
-        long base = 5L;
+        long base = 3L;
         long exponent = 10L;
         System.out.println(binPowRecursive(base, exponent));
         System.out.println(binPowIterative(base, exponent));
