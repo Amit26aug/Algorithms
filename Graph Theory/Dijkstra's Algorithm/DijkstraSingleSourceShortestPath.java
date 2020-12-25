@@ -45,6 +45,7 @@ class DijkstraAlgorithmUtil {
 
     private static Map<Integer, Integer> shortestPathFrom(Map<Integer, List<Edge>> adjacencyList, int start, int end) {
         Map<Integer, Integer> shortestDistance = new HashMap<>();
+        shortestDistance.put(start, 0);
         dijkstra(adjacencyList, start, end, new HashSet<Integer>(), shortestDistance);
         return shortestDistance;
     }
