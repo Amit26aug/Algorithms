@@ -58,6 +58,10 @@ class DijkstraAlgorithmUtil {
         while (priorityQueue.size() > 0) {
             Node current = priorityQueue.poll();
             visited.add(current.nodeId);
+            // Skip it if it not at a better distance already
+            if (shortestDistance.get(current.nodeId) < current.value) {
+                continue;
+            }
             if (adjacencyList.get(current.nodeId) == null) {
                 continue;
             }
