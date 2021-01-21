@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Algorithms.iml" filepath="$PROJECT_DIR$/.idea/Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph Theory/Articulation Points or Cut-Vertex/Articulation Points or Cut-Vertex.iml" filepath="$PROJECT_DIR$/Graph Theory/Articulation Points or Cut-Vertex/Articulation Points or Cut-Vertex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CP-Algorithms/CP-Algorithms.iml" filepath="$PROJECT_DIR$/CP-Algorithms/CP-Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Course/Course.iml" filepath="$PROJECT_DIR$/Course/Course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph Theory/Graph Theory.iml" filepath="$PROJECT_DIR$/Graph Theory/Graph Theory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Course/Sorting/Sorting.iml" filepath="$PROJECT_DIR$/Course/Sorting/Sorting.iml" />
+    </modules>
+  </component>
+</project>
